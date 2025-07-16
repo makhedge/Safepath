@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keystone HomeSafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 scroll-smooth">
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="text-2xl font-extrabold text-blue-700 drop-shadow-sm">
+        Keystone <span class="text-blue-500">HomeSafe</span>
+      </a>
+      <a href="#contact"
+         class="hidden sm:inline-flex items-center px-4 py-2 rounded-2xl text-sm font-semibold
+                bg-blue-600 hover:bg-blue-700 text-white transition focus:outline-none focus:ring-2
+                focus:ring-blue-400">
+        Free Estimate
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="relative overflow-hidden py-14 sm:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-blue-800 mb-6">
+          Safe, Accessible Homes for Seniors in Central&nbsp;PA
+        </h1>
+        <p class="text-lg leading-relaxed mb-6 max-w-lg">
+          We help Medicaid & Managed-Care patients live independently by upgrading their homes with
+          ADA-compliant modifications—installed quickly by licensed, insured professionals.
+        </p>
+        <p class="text-sm text-gray-600 mb-8">
+          Licensed & insured • MCO-approved • Free estimates
+        </p>
+        <a href="#contact"
+           class="inline-flex items-center px-6 py-3 rounded-2xl text-base font-semibold
+                  bg-blue-600 hover:bg-blue-700 text-white transition">
+          Request a Free Estimate
+        </a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1605315963814-82ba65035c0d?auto=format&fit=crop&w=800&q=80"
+           alt="Smiling senior couple in their accessible home"
+           class="w-full rounded-2xl shadow-lg object-cover" />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">What We Offer</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span class="font-medium">Grab bar installation</span>
+        </div>
+        <!-- repeat the block above for each service you want -->
+      </div>
+      <p class="text-center text-sm text-gray-600 mt-8">
+        All services may be <strong>100% covered</strong> for eligible Medicaid/MCO participants with a care-manager referral.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-blue-800">Who We Serve</h2>
+        <ul class="list-disc list-inside space-y-4">
+          <li>Older adults choosing to age in place</li>
+          <li>Medicaid CHC Waiver participants</li>
+          <li>MCO patients (UPMC for You, AmeriHealth Caritas, PA Health & Wellness, Keystone First)</li>
+          <li>Caregivers, OTs/PTs, and discharge planners</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-blue-800">Ready to make your home safer?</h2>
+        <form name="contact" method="POST" data-netlify="true"
+              class="bg-white p-6 rounded-2xl shadow-md grid gap-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <label class="block text-sm font-medium">Name
+            <input name="name" required
+                   class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+          </label>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block text-sm font-medium">Phone
+              <input name="phone" required
+                     class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+            </label>
+            <label class="block text-sm font-medium">Email
+              <input type="email" name="email" required
+                     class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+            </label>
+          </div>
+          <label class="block text-sm font-medium">Brief description
+            <textarea name="message" rows="3"
+                      class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400"></textarea>
+          </label>
+          <label class="inline-flex items-center text-sm">
+            <input type="checkbox" name="medicaid" class="mr-2 focus:ring-blue-400" />
+            I am a Medicaid/MCO patient or caregiver
+          </label>
+          <button type="submit"
+                  class="mt-4 inline-flex justify-center px-6 py-3 rounded-2xl font-semibold bg-blue-600 hover:bg-blue-700 text-white">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    © <script>document.write(new Date().getFullYear())</script> Keystone HomeSafe • Harrisburg, PA • Licensed & Insured
+  </footer>
+</body>
+</html>
