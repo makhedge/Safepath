@@ -56,4 +56,134 @@
   </section>
 
   <!-- ▾ SERVICES ▾ -->
-  <
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">What We Offer</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- repeat block for each service -->
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Grab bar installation</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Stair &amp; hallway railings</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Wheelchair ramps</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Bathroom safety upgrades</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Door widening &amp; thresholds</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Lever handle conversions</span>
+        </div>
+
+        <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-2xl shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600 mt-1" fill="none"
+               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span class="font-medium">Custom accessibility solutions</span>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-600 mt-8">
+        All services may be <strong>100% covered</strong> for eligible Medicaid/MCO participants with a care-manager referral.
+      </p>
+    </div>
+  </section>
+
+  <!-- ▾ WHO WE SERVE + CONTACT FORM ▾ -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+      <!-- Who we serve -->
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-blue-800">Who We Serve</h2>
+        <ul class="list-disc list-inside space-y-4">
+          <li>Older adults choosing to age in place</li>
+          <li>Medicaid CHC Waiver participants</li>
+          <li>MCO patients (UPMC for You, AmeriHealth Caritas, PA&nbsp;Health&nbsp;&nbsp;Wellness, Keystone First)</li>
+          <li>Caregivers, OTs/PTs, and discharge planners</li>
+        </ul>
+      </div>
+
+      <!-- Contact form (Netlify ready) -->
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-blue-800">Ready to make your home safer?</h2>
+        <form name="contact" method="POST" data-netlify="true"
+              class="bg-white p-6 rounded-2xl shadow-md grid gap-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <label class="block text-sm font-medium">Name
+            <input name="name" required
+                   class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+          </label>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block text-sm font-medium">Phone
+              <input name="phone" required
+                     class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+            </label>
+            <label class="block text-sm font-medium">Email
+              <input type="email" name="email" required
+                     class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400" />
+            </label>
+          </div>
+
+          <label class="block text-sm font-medium">Brief description
+            <textarea name="message" rows="3"
+                      class="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400"></textarea>
+          </label>
+
+          <label class="inline-flex items-center text-sm">
+            <input type="checkbox" name="medicaid" class="mr-2 focus:ring-blue-400" />
+            I am a Medicaid/MCO patient or caregiver
+          </label>
+
+          <button type="submit"
+                  class="mt-4 inline-flex justify-center px-6 py-3 rounded-2xl font-semibold
+                         bg-blue-600 hover:bg-blue-700 text-white">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▾ FOOTER ▾ -->
+  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    © <script>document.write(new Date().getFullYear())</script> Keystone HomeSafe • Harrisburg, PA • Licensed & Insured
+  </footer>
+</body>
+</html>
